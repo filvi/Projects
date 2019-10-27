@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import smtplib
 
 
-
-URL = "https://www.amazon.it/MSI-8RC-020IT-Notebook-Processore-i7-8565U/dp/B07MWT92CW/"
+# https://www.msi.com/Content-creation/Prestige-15-A10X/wheretobuy
+URL = "https://www.amazon.it/gp/product/B07WX4VG7V"
 
 
 headers = { "User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"}
