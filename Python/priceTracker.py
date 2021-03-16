@@ -29,8 +29,8 @@ def send_mail(title, price, URL):
     server.starttls()
     server.ehlo()
 
-    gpass = "irurqsjbivvmjzeu"
-    server.login('fv.filippovicari@gmail.com', gpass )
+    gpass = "secrepass"
+    server.login('sender_email@gmail.com', gpass )
 
     subject = f"Il prezzo inferiore alla soglia impostata (999)"
     body = f"Il prodotto che stai tracciando: \n{title}\n\nora costa {price}\n\necco il link: {URL}" 
@@ -39,8 +39,8 @@ def send_mail(title, price, URL):
 
 
     server.sendmail(
-        'fv.filippovicari@gmail.com',
-        'fil.vicari@gmail.com',
+        'sender_email@gmail.com',
+        'receiver_email@gmail.com',
         msg
     )
 
